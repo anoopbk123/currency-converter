@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Currency Converter</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="converter-container">
-    <h1><center>Currency Converter</center></h1>
+  <head>
+    <title>Currency Converter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="currency-converter, usd-to-inr, money-exchange"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="converter-container">
+      <h1><center>Currency Converter</center></h1>
 
-    <div class="form-group">
-      <label for="amount">Amount:</label>
-      <input type="number" class="form-control input-amount" id="amount" placeholder="enter amount">
-    </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input
+          type="number"
+          class="form-control input-amount"
+          id="amount"
+          placeholder="enter amount"
+        />
+      </div>
 
-    <div class="form-group">
-      <label for="from">From:</label>
-      <select class="form-control" id="from">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="INR">INR</option>
+      <div class="form-group">
+        <label for="from">From:</label>
+        <select class="form-control" id="from">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
 
-        <option value="ALL">ALL</option>
-        <option value="AMD">AMD</option>
-        <option value="ANG">ANG</option>
-        <option value="JPY">JPY</option>
-        <option value="KES">KES</option>
-        <option value="LAK">LAK</option>
-        <option value="PAB">PAB</option>
-        <option value="PEN">PEN</option>
-      </select>
+          <option value="ALL">ALL</option>
+          <option value="AMD">AMD</option>
+          <option value="ANG">ANG</option>
+          <option value="JPY">JPY</option>
+          <option value="KES">KES</option>
+          <option value="LAK">LAK</option>
+          <option value="PAB">PAB</option>
+          <option value="PEN">PEN</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <select class="form-control" id="to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="ALL">ALL</option>
+          <option value="AMD">AMD</option>
+          <option value="ANG">ANG</option>
+          <option value="JPY">JPY</option>
+          <option value="KES">KES</option>
+          <option value="LAK">LAK</option>
+          <option value="PAB">PAB</option>
+          <option value="PEN">PEN</option>
+        </select>
+      </div>
+      <center>
+        <button class="btn" id="swap">Swap</button>
+      </center>
+      <div class="result-container" id="result"></div>
     </div>
-    <div class="form-group">
-      <label for="to">To:</label>
-      <select class="form-control" id="to">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="INR">INR</option>
-        <option value="ALL">ALL</option>
-        <option value="AMD">AMD</option>
-        <option value="ANG">ANG</option>
-        <option value="JPY">JPY</option>
-        <option value="KES">KES</option>
-        <option value="LAK">LAK</option>
-        <option value="PAB">PAB</option>
-        <option value="PEN">PEN</option>
-      </select>
-    </div>
-    <center>
-    <button class="btn" id="swap">Swap</button>
-    </center>
-    <div class="result-container" id="result"></div>
-  </div>
-<script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
